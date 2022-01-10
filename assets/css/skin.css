@@ -109,20 +109,20 @@ h1, h2, h3, h4, h5, h6, .accordion-list > li > a, .cnt-box-testimonials .testimo
 .quote, p b, .list-nav a, .text-color, .text-color p, .cnt-pricing-table > ul > li, nav .tab-nav li a, nav .tab-nav li.active a, nav .tab-nav li:hover a, nav .tab-nav li:not(.active):not(:hover) a,
 nav.light .col i, .menu-cnt > ul .col li a, .breadcrumb li a, .countdown, .media-box-down .caption h2, .album-title, .collapse-button a, .search-bar input[type=submit], .search-box-menu > i,
 body > nav .icon-links a i, .shop-menu-cnt > i:before, .shop-menu-cnt .cart-total, .menu-mini > .container > ul > li, .menu-btn:before {
-  color: #003879;
+  color: rgb(18, 48, 74);
 }
 
 .accordion-list > li > a:before, .cnt-box-badge .badge, .cnt-box-blog-side .blog-date, .cnt-box-blog-top .blog-date, .cnt-box-top .extra-field, .media-box-half .extra-field {
-  background-color: #003879;
+  background-color: rgb(18, 48, 74);
 }
 
 .glide__bullets > button:hover, .glide__bullets > button.glide__bullet--active, .pagination li.page:hover a, .pagination li.page.active a, .list-tags a, .tagcloud a {
-  background-color: #003879;
-  border-color: #003879;
+  background-color: rgb(18, 48, 74);
+  border-color: rgb(18, 48, 74);
 }
 
 .glide__bullets > button, .pagination li.page a {
-  border-color: #003879;
+  border-color: rgb(18, 48, 74);
 }
 
 body, p, input, textarea, ::placeholder, .tab-box.tab-vertical > .tab-nav li:not(.active):not(:hover) a, body > header .container > h2 {
@@ -191,7 +191,7 @@ nav.light a.btn-border, .dropdown > ul li:hover > a, .dropdown > ul li.active > 
 }
 
 .light p, .btn-border:hover, .media-box-full .caption .extra-field, .media-box-reveal p, .light .accordion-list > li > a, .media-box p {
-  color: rgb(236 245 251 / 71%) !important;
+  color: rgb(236, 245, 251) !important;
 }
 
 .input-text, .input-select, .input-textarea, .table, .table td, .table th, .accordion-list > li, .menu-inner:not(.menu-inner-vertical) .dropdown ul, .table:not(.table-grid) tr,
@@ -429,7 +429,7 @@ p + .box-sign {
 
 .section-ovarlay-image:before {
   content: '';
-  background-image: url(media/saas/overlay-1.svg);
+  background-image: url(assets/media/saas/overlay-1.svg);
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -453,7 +453,7 @@ p + .box-sign {
 
 i.icon-check, i.icon-check-gray, .cnt-pricing-table > ul > li:before {
   content: '';
-  background-image: url(media/check.svg);
+  background-image: url(assets/media/check.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px;
@@ -464,7 +464,7 @@ i.icon-check, i.icon-check-gray, .cnt-pricing-table > ul > li:before {
 
 i.icon-photo:before, .icon-photo i:before {
   content: '';
-  background-image: url(media/photo-icon.png);
+  background-image: url(assets/media/photo-icon.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
@@ -474,7 +474,7 @@ i.icon-photo:before, .icon-photo i:before {
 }
 
 i.icon-check-gray {
-  background-image: url(media/check-gray.svg);
+  background-image: url(assets/media/check-gray.svg);
 }
 
 .table-price tbody td, .table-price thead th {
@@ -790,9 +790,14 @@ section.section-top-overflow > .container {
   padding-top: 0;
 }
 
+.section-bottom-layer {
+  padding-bottom: 100px;
+}
+
 .section-bottom-layer:after, .section-bottom-layer-2:after {
   content: '';
   width: 100%;
+  height: 100px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -811,6 +816,10 @@ section.section-top-overflow > .container {
 
 .section-bottom-layer.section-color-layer:after {
   background-color: rgb(241, 245, 247);
+}
+
+.section-bottom-layer + section > .container {
+  padding-top: 0;
 }
 
 .section-bottom-layer-2 > .container {
@@ -1236,7 +1245,7 @@ nav .btn {
 }
 
 .dropdown > ul, .dropdown-submenu > ul {
-  min-width: 240px;
+  min-width: 180px;
 }
 
 nav.scroll-menu, nav:not(.menu-transparent) {
@@ -1394,7 +1403,6 @@ body > header .breadcrumb {
   position: absolute;
   right: 30px;
   top: 15px;
-  background-color: transparent;
 }
 
 .breadcrumb li a {
@@ -1949,7 +1957,7 @@ body > header .breadcrumb {
 
 .media-box-full .caption:after {
   content: '';
-  background-image: url(media/play.svg);
+  background-image: url(assets/media/play.svg);
   background-size: contain;
   position: absolute;
   width: 30px;
